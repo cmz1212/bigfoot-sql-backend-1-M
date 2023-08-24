@@ -42,7 +42,7 @@ class SightingsController extends BaseController {
     async getAllComments(req, res) {
       const { sightingId } = req.params;
       try {
-        // Assuming your "comment" model is named "Comment"
+        // Assuming your "comment" model is named "commentModel"
         const comments = await this.commentModel.findAll({
           where: {
             sighting_id: sightingId,

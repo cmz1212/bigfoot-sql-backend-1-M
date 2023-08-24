@@ -24,6 +24,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'comment',
+    underscored: true
   });
   return comment;
 };
